@@ -32,3 +32,5 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
   
+  
+![Assest](https://i.ibb.co/RbKxNzt/assest.png)
