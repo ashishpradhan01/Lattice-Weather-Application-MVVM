@@ -7,12 +7,13 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
 
 ## 🔗 Links
 
-**Lattice Whether App:** https://drive.google.com/file/d/1qjjQ4VYp_ggJoQcwX6-Vrgx-EsUecnak/view?usp=sharing
+**Lattice Whether App [Github Release]:** https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/releases/tag/latttice-whether-app
 
 **Screenshots:** https://drive.google.com/drive/folders/1lpI-Htx2DZgd7JLMqohpOcE5CQjYIu_L?usp=sharing
 
 **Video:** https://drive.google.com/file/d/1yj0P7Hqndq5RaiTiHIS5byXFM5DvNYfM/view?usp=sharing
-  
+
+
 ##  Libraries/ Frameworks
 
     // Architectural Components
