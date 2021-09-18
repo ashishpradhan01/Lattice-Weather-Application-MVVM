@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Lattice Whether</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="address1">Address-1</string>
+    <string name="address_2">Address-2</string>
+    <string name="pincode">Pincode</string>
+    <string name="district">District:</string>
+    <string name="state">State:</string>
+    <string name="check">Check</string>
+    <string name="register">Register</string>
+    <string name="register_yourself">Register Yourself</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="cant_be_empty">Can\'t be empty</string>
+    <string name="invalid_pinocde">Invalid pincode</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="fetching">Fetching…</string>
+    <string name="invalid_mobile_number">Invalid mobile number</string>
+    <string name="KEY_MOBILE">mobileNumber</string>
+    <string name="KEY_NAME">fullName</string>
+    <string name="KEY_GENDER">gender</string>
+    <string name="KEY_DOB">dob</string>
+    <string name="KEY_ADDRESS1">address1</string>
+    <string name="KEY_ADDRESS2">address2</string>
+    <string name="KEY_PINCODE">pincode</string>
+    <string name="check_pincode">Please check pincode</string>
+    <string name="enter_city_name">Enter City Name</string>
+    <string name="show_whether">Show Whether</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="change">Change</string>
+</resources>
