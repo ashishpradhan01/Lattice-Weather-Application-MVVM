@@ -30,4 +30,6 @@
     <string name="latitude">Latitude:</string>
     <string name="longitude">Longitude:</string>
     <string name="change">Change</string>
+    <string name="wrong_input">Wrong input</string>
+    <string name="isloggedin">isLoggedIn</string>
 </resources>

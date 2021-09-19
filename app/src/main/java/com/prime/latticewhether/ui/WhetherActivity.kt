@@ -99,7 +99,7 @@ class WhetherActivity : AppCompatActivity() {
                     progressHorizontal.visibility = View.GONE
                     llShowWhetherView.visibility = View.VISIBLE
                     llWhetherReport.visibility = View.GONE
-                    etCityName.editText?.error = response.message
+                    etCityName.editText?.error = getString(R.string.wrong_input)
                 }
             }
             is Resource.Loading ->{
@@ -107,6 +107,7 @@ class WhetherActivity : AppCompatActivity() {
                     progressHorizontal.visibility = View.VISIBLE
                     llShowWhetherView.visibility = View.VISIBLE
                     llWhetherReport.visibility = View.GONE
+                    etCityName.editText?.error = null
                 }
             }
         }

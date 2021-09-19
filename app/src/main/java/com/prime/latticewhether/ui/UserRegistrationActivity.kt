@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.prime.latticewhether.R
@@ -38,7 +37,15 @@ class UserRegistrationActivity : AppCompatActivity() {
         pincodeViewModel = ViewModelProvider(this, pincodeViewModelFactory)
             .get(PincodeViewModel::class.java)
 
+        sharedPref = getPreferences(Context.MODE_PRIVATE)
+
         initGenderDropdownMenu()
+
+        if (sharedPref.getBoolean(getString(R.string.isloggedin), false)){
+            startActivity(Intent(this, WhetherActivity::class.java))
+            finish()
+        }
+
 
         userRegistrationBinding.ivPickDate.setOnClickListener {
             initDateOfBirthPicker()
@@ -53,7 +60,7 @@ class UserRegistrationActivity : AppCompatActivity() {
                 userRegistrationBinding.etPincode.error = getString(R.string.cant_be_empty)
         }
 
-        pincodeViewModel.districtAndState.observe(this, Observer { response ->
+        pincodeViewModel.districtAndState.observe(this, { response ->
             setViewDistrictAndPincode(response)
         }
         )
@@ -63,13 +70,49 @@ class UserRegistrationActivity : AppCompatActivity() {
                 saveUserInformation()
                 Toast.makeText(applicationContext,"Registration Successful", Toast.LENGTH_LONG).show()
                 startActivity(Intent(this, WhetherActivity::class.java))
+                finish()
             }
         }
 
+
         userRegistrationBinding.apply {
+
             etPincode.editText?.addTextChangedListener {
-                btnCheckPincode.isEnabled = it?.length == 6 }
+                btnCheckPincode.isEnabled = it?.length == 6
+            }
+
+            etMobileNumber.apply {
+                editText?.addTextChangedListener {
+                    error =  if ( it?.length== 10) null
+                    else getString(R.string.invalid_mobile_number)
+                }
+            }
+            etFullName.apply {
+                editText?.addTextChangedListener {
+                    error = if (it?.isNotEmpty() == true) null
+                    else getString(R.string.cant_be_empty)
+                }
+            }
+            etGenderMenu.apply {
+                editText?.addTextChangedListener {
+                    error = if (it?.isNotEmpty() == true) null
+                    else getString(R.string.cant_be_empty)
+                }
+            }
+            etDOB.apply {
+                editText?.addTextChangedListener {
+                    error = if (it?.isNotEmpty() == true) null
+                    else getString(R.string.cant_be_empty)
+                }
+            }
+            etAddress1.apply {
+                editText?.addTextChangedListener {
+                    error = if (it?.isNotEmpty() == true) null
+                    else getString(R.string.cant_be_empty)
+                }
+            }
         }
+
     }
 
     private fun saveUserInformation() {
@@ -82,8 +125,8 @@ class UserRegistrationActivity : AppCompatActivity() {
             val address2 = etAddress2.editText?.text.toString()
             val pincode = etPincode.editText?.text.toString()
 
-            sharedPref = getPreferences(Context.MODE_PRIVATE)
             with(sharedPref.edit()){
+                putBoolean(getString(R.string.isloggedin), true)
                 putString(getString(R.string.KEY_MOBILE), number)
                 putString(getString(R.string.KEY_NAME), name)
                 putString(getString(R.string.KEY_GENDER), gender)
@@ -91,10 +134,10 @@ class UserRegistrationActivity : AppCompatActivity() {
                 putString(getString(R.string.KEY_ADDRESS1), address1)
                 if (address1.isNotEmpty()) putString(getString(R.string.KEY_ADDRESS2), address2)
                 putString(getString(R.string.KEY_PINCODE), pincode)
+                apply()
             }
 
     }
-
 }
 
     private fun checkUserRegistrationForm():Boolean {
