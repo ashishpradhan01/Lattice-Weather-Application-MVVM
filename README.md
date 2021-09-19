@@ -11,7 +11,7 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
 
 **Screenshots:** https://drive.google.com/drive/folders/1lpI-Htx2DZgd7JLMqohpOcE5CQjYIu_L?usp=sharing
 
-**Video:** https://drive.google.com/file/d/1yj0P7Hqndq5RaiTiHIS5byXFM5DvNYfM/view?usp=sharing
+**Video:** https://drive.google.com/file/d/14xdhNNAFr6qZiRiVILeqN7lbWJTGoWFV/view?usp=sharing
 
 
 ##  Libraries/ Frameworks
