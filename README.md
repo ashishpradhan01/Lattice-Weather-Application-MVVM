@@ -16,16 +16,9 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
 
 ##  Libraries/ Frameworks
 
-    // Architectural Components
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
-
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1'
-
-    // Coroutine Lifecycle Scopes
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
