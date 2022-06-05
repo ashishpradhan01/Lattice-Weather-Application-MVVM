@@ -25,7 +25,7 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
   
-  
+
 ## ScreenShot
-<img src="https://github.com/favicon.ico" width="48" height="100">
-<img src="https://github.com/favicon.ico" width="48" height="100">
+<img src="https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss1.png" width="100" height="200">
+<img src="https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss2.png" width="100" height="200">
