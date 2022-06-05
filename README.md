@@ -27,4 +27,5 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
   
   
   
-![Assest](https://i.ibb.co/RbKxNzt/assest.png)
+![Screenshot](https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss1.png)
+![Screenshot](https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss2.png)
