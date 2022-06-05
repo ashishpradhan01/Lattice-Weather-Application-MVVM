@@ -26,6 +26,6 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
     implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
   
   
-  
-![Screenshot](https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss1.png)
-![Screenshot](https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss2.png)
+# ScreenShots
+![test](https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss1.png)
+![test](https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/blob/master/ss2.png)
