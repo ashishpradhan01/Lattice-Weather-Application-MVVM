@@ -1,5 +1,5 @@
 
-# Lattice Whether Application MVVM
+# Lattice Weather Application MVVM
 
 The weather app provides weather conditions, relative humidity, wind speed, Longitude, Latitude for the given city/country.
 
@@ -7,7 +7,7 @@ The weather app provides weather conditions, relative humidity, wind speed, Long
 
 ## 🔗 Links
 
-**Lattice Whether App [Github Release]:** https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/releases/tag/latttice-whether-app
+**Lattice Weather App [Github Release]:** https://github.com/ashishpradhan01/Lattice-Whether-Application-MVVM/releases/tag/latttice-whether-app
 
 **Screenshots:** https://drive.google.com/drive/folders/1lpI-Htx2DZgd7JLMqohpOcE5CQjYIu_L?usp=sharing
 
